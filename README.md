@@ -6,9 +6,10 @@ A Framework of Ensemble Models for Predicting ERRα Binders, Antagonists, and Ag
 ## Overview:
 
 - `datasets/` contains the three dataset files ("xxx_train" used for 8:1:1 data splitting, "xxx_external" used for external validation);
+- `ensemble_models` take the external validation set of three datasets as examples to use ERRα-Predictor
 - `graph_model` contains the final selected GNN models for the three datasets;
 - `ml_final_models` contains the final selected ML models for three datasets;
-- `ensemble_models` take the external validation set of three datasets as examples to use ERRα-Predictor
+- `streamlit` contains local web deployment of ERRα-Predictor
 - `best_hyperparameters.json` optimal hyperparameters for GNN models
 
 ## Conda environments:
@@ -39,16 +40,16 @@ then for the three datasets, run the machine learning codes `molecular_represent
 Given the json file of the best hyperparameters, you only need to run `model_graph_merge_hyper.py`;
 if you want to try this hyperparameter exploration process, run `graph_hyper_tune.py`.
 
-## Usage:
-
+### Ensemble models
 You can look at the examples in `ensemble_models`：for binders, antagonists, and agonists, ERRα-Predictor was used to predict them respectively.
+
+## Usage:
+If you want to use ERRα-Predictor, After configuring the required Python environment and downloading the mol2vec pkl file, it is recommended that you enter the `streamlit` for local web deployment.
 Use the command:
 
 ```
-cd ensemble_models
-python ensemble_model_binder.py
-python ensemble_model_antagonist.py
-python ensemble_model_agonist.py
+cd streamlit
+streamlit run app.py
 ```
 
-(Here we take the data of the external validation sets as examples. If you want to use other data, just replace the data of the corresponding external validation set, eg. for agonists, in this path: `datasets/agonist_external/raw/Your_own_data.xlsx`) 
+![](https://github.com/lxiongZ/ERRalpha-Predictor/blob/main/workflow.png)
