@@ -53,6 +53,7 @@ cd streamlit
 streamlit run app.py
 ```
 
-The web page offers **data retrieval** and **prediction** capabilities.
+The web page incorporates functionalities for data retrieval and prediction. The former involves querying a curated dataset of ERRα ligands, while the latter utilizes ERRα-Predictor models to perform predictions. Users can choose to submit either a single SMILES string or multiple SMILES strings for querying or prediction, and the results can be downloaded.
+
 ![](https://github.com/lxiongZ/ERRalpha-Predictor/blob/main/streamlit/Schematic%20diagram.png)
 
