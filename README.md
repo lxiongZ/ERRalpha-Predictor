@@ -14,18 +14,18 @@ A Framework of Ensemble Models for Predicting ERRα Binders, Antagonists, and Ag
 
 ## Conda environments:
 
-python = 3.7
-deepchem = 2.7.1
-imbalanced-learn = 0.7.0
-lightgbm = 4.5.0
-numpy = 1.21.6
-optuna = 4.0.0
-pytorch = 1.13.1
-pytorch-cuda = 11.7
-rdkit = 2023.3.2
-scikit-learn = 1.0.2
-torch-geometric = 2.3.1
-xgboost = 1.6.2 
+python = 3.7  
+deepchem = 2.7.1  
+imbalanced-learn = 0.7.0  
+lightgbm = 4.5.0  
+numpy = 1.21.6  
+optuna = 4.0.0  
+pytorch = 1.13.1  
+pytorch-cuda = 11.7  
+rdkit = 2023.3.2  
+scikit-learn = 1.0.2  
+torch-geometric = 2.3.1  
+xgboost = 1.6.2  
 streamlit = 1.23.1
 
 ## Experiments:
