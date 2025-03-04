@@ -1,2 +1,54 @@
 # ERRalpha-Predictor
-A Framework of Ensemble Models for Prediction of ERRα Binders, Antagonists and Agonists Using Artificial Intelligence
+A Framework of Ensemble Models for Predicting ERRα Binders, Antagonists, and Agonists Using Artificial Intelligence
+
+![](https://github.com/lxiongZ/ERRalpha-Predictor/blob/main/workflow.png)
+
+## Overview:
+
+- `datasets/` contains the three dataset files ("xxx_train" used for 8:1:1 data splitting, "xxx_external" used for external validation);
+- `graph_model` contains the final selected GNN models for the three datasets;
+- `ml_final_models` contains the final selected ML models for three datasets;
+- `ensemble_models` take the external validation set of three datasets as examples to use ERRα-Predictor
+- `best_hyperparameters.json` optimal hyperparameters for GNN models
+
+## Conda environments:
+
+python = 3.7
+deepchem = 2.7.1
+imbalanced-learn = 0.7.0
+lightgbm = 4.5.0
+numpy = 1.21.6
+optuna = 4.0.0
+pytorch = 1.13.1
+pytorch-cuda = 11.7
+rdkit = 2023.3.2
+scikit-learn = 1.0.2
+torch-geometric = 2.3.1
+xgboost = 1.6.2 
+streamlit = 1.23.1
+
+## Experiments:
+
+### ML models
+
+You need to download the mol2vec pkl file from [here](https://github.com/samoturk/mol2vec/blob/master/examples/models/model_300dim.pkl) first,
+then for the three datasets, run the machine learning codes `molecular_representation.py` and `model_ml_construct.py`, get representation and model training results respectively.
+
+### GNN models
+
+Given the json file of the best hyperparameters, you only need to run `model_graph_merge_hyper.py`;
+if you want to try this hyperparameter exploration process, run `graph_hyper_tune.py`.
+
+## Usage:
+
+You can look at the examples in `ensemble_models`：for binders, antagonists, and agonists, ERRα-Predictor was used to predict them respectively.
+Use the command:
+
+```
+cd ensemble_models
+python ensemble_model_binder.py
+python ensemble_model_antagonist.py
+python ensemble_model_agonist.py
+```
+
+(Here we take the data of the external validation sets as examples. If you want to use other data, just replace the data of the corresponding external validation set, eg. for agonists, in this path: `datasets/agonist_external/raw/Your_own_data.xlsx`) 
