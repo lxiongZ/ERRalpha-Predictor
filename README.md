@@ -53,6 +53,9 @@ cd streamlit
 streamlit run app.py
 ```
 
-<img src="https://github.com/lxiongZ/ERRalpha-Predictor/blob/main/streamlit/Schematic%20diagram.png" style="width:80%;" alt="Schematic diagram">
+<div style="text-align: center;">
+  <img src="https://github.com/lxiongZ/ERRalpha-Predictor/blob/main/streamlit/Schematic%20diagram.png" style="width:80%;" alt="Schematic diagram">
+</div>
+
 
 
