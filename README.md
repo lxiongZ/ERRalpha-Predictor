@@ -44,7 +44,7 @@ if you want to try this hyperparameter exploration process, run `graph_hyper_tun
 You can look at the examples in `ensemble_models`：for binders, antagonists, and agonists, ERRα-Predictor was used to predict them respectively.
 
 ## Usage:
-If you want to use ERRα-Predictor, After configuring the required Python environment and downloading the [mol2vec](https://github.com/samoturk/mol2vec/blob/master/examples/models/model_300dim.pkl) pkl file, it is recommended that you enter the `streamlit` for local web deployment.
+If you want to use ERRα-Predictor, after configuring the required Python environment and downloading the [mol2vec](https://github.com/samoturk/mol2vec/blob/master/examples/models/model_300dim.pkl) pkl file, it is recommended that you enter the `streamlit` for local web deployment.
 
 Use the command:
 
