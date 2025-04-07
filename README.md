@@ -10,6 +10,7 @@ A Framework of Ensemble Models for Predicting ERRα Binders, Antagonists, and Ag
 - `graph_model` contains the final selected GNN models for the three datasets;
 - `ml_final_models` contains the final selected ML models for three datasets;
 - `streamlit` contains local web deployment of ERRα-Predictor
+- `ml_best_hyperparameters.pkl` optimal hyperparameters for ML models
 - `best_hyperparameters.json` optimal hyperparameters for GNN models
 
 ## Conda environments:
