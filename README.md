@@ -12,6 +12,7 @@ A Framework of Ensemble Models for Predicting ERRα Binders, Antagonists, and Ag
 - `streamlit` contains local web deployment of ERRα-Predictor
 - `ml_best_hyperparameters.pkl` optimal hyperparameters for ML models
 - `best_hyperparameters.json` optimal hyperparameters for GNN models
+- `GNNExplainer_viz.ipynb` visualization of GNN models
 
 ## Conda environments:
 
