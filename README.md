@@ -6,11 +6,11 @@ A Framework of Ensemble Models for Predicting ERRα Binders, Antagonists, and Ag
 ## Overview:
 
 - `datasets/` contains the three dataset files ("xxx_train" used for 8:1:1 data splitting, "xxx_external" used for external validation);
-- `ensemble_models` take the external validation set of three datasets as examples to use ERRα-Predictor
-- `graph_model` contains the final selected GNN models for the three datasets;
-- `ml_final_models` contains the final selected ML models for three datasets;
-- `streamlit` contains local web deployment of ERRα-Predictor
-- `supplementary)information` contains supplementary materials
+- `ensemble_models/` take the external validation set of three datasets as examples to use ERRα-Predictor
+- `graph_models/` contains the final selected GNN models for the three datasets;
+- `ml_final_models/` contains the final selected ML models for three datasets;
+- `streamlit/` contains local web deployment of ERRα-Predictor
+- `supplementary)information/` contains supplementary materials
 - `ml_best_hyperparameters.pkl` optimal hyperparameters for ML models
 - `best_hyperparameters.json` optimal hyperparameters for GNN models
 - `GNNExplainer_viz.ipynb` visualization of GNN models
