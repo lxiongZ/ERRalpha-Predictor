@@ -30,7 +30,8 @@ rdkit = 2023.3.2
 scikit-learn = 1.0.2  
 torch-geometric = 2.3.1  
 xgboost = 1.6.2  
-streamlit = 1.23.1
+streamlit = 1.23.1  
+streamlit-ketcher = 0.0.1  
 
 ## Experiments:
 
