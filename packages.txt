@@ -1,7 +1,0 @@
-# packages.txt ── Linux (apt) packages needed by RDKit Draw
-libcairo2
-libcairo2-dev
-libfreetype6
-libsm6
-libxext6
-libxrender1
