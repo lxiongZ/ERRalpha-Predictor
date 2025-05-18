@@ -1,7 +1,0 @@
-libcairo2
-libcairo2-dev
-libfreetype6
-libsm6
-libxext6
-libxrender1
-
