@@ -11,7 +11,7 @@ A Framework of Ensemble Models for Predicting ERRα Binders, Antagonists, and Ag
 - `ml_final_models/` contains the final selected ML models for three datasets;
 - `mmpa_and_representative_substructure/` contains reference repository code
 - `streamlit/` contains local web deployment of ERRα-Predictor;
-- `supplementary)information/` contains supplementary materials;
+- `supplementary_information/` contains supplementary materials;
 - `ml_best_hyperparameters.pkl` optimal hyperparameters for ML models;
 - `best_hyperparameters.json` optimal hyperparameters for GNN models;
 - `GNNExplainer_viz.ipynb` visualization of GNN models
