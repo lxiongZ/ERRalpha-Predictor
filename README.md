@@ -1,5 +1,6 @@
 # ERRalpha-Predictor
 A Framework of Ensemble Models for Predicting ERRα Binders, Antagonists, and Agonists Using Artificial Intelligence  
+You can use it simply at [https://err1p-web.streamlit.app](https://err1p-web.streamlit.app)  
 
 ![](https://github.com/lxiongZ/ERRalpha-Predictor/blob/main/workflow.png)
 
